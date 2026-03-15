@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.6
+
+### Patch Changes
+
+- fae6127: Add active teamspace name to whoami command output
+
 ## 0.3.5
 
 ### Patch Changes
