@@ -1,5 +1,12 @@
 # @upstash/context7-mcp
 
+## 3.1.1
+
+### Patch Changes
+
+- cb6aee1: Bump runtime dependencies: `@modelcontextprotocol/sdk` 1.25 -> 1.29, `undici` 6 -> 7, and `zod` 4.3 -> 4.4.
+- fcdc36e: Advertise empty `prompts` and `resources` capabilities with no-op `prompts/list`, `resources/list`, and `resources/templates/list` handlers. Some MCP clients (e.g. opencode) call these unconditionally and treat `-32601 Method not found` as a fatal connection error rather than honoring the negotiated capabilities, which previously prevented the server from loading.
+
 ## 3.1.0
 
 ### Minor Changes
